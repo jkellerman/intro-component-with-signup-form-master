@@ -96,16 +96,22 @@ input:focus {
   position: relative;
 }
 
-.input::after.active {
+.icon {
   content: url(images/icon-error.svg);
   position: absolute;
-  transform: translate(-3em, 1em);
+  right: 1em;
+  top: 1.25em;
+  display: none;
 }
 
-.error-fname,
-.error-lname,
-.error-email,
-.error-password {
+.active {
+  display: block;
+}
+
+#error-fname,
+#error-lname,
+#error-email,
+#error-password {
   font-style: italic;
   color: var(--Red);
   font-size: 0.75rem;
