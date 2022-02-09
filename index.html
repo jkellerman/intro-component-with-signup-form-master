@@ -34,7 +34,7 @@
           <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
         </div>
         <form action="/" method="get">
-          <div>
+          <div class="input">
             <label for="fname">First Name</label>
             <input
               type="text"
@@ -42,8 +42,9 @@
               id="fname"
               placeholder="First Name"
             />
+            <div class="error-fname"></div>
           </div>
-          <div>
+          <div class="input">
             <label for="lname">Last Name</label>
             <input
               type="text"
@@ -51,8 +52,9 @@
               id="lname"
               placeholder="Last Name"
             />
+            <div class="error-lname"></div>
           </div>
-          <div>
+          <div class="input">
             <label for="email">Email Address</label>
             <input
               type="email"
@@ -60,8 +62,9 @@
               id="email"
               placeholder="Email Address"
             />
+            <div class="error-email"></div>
           </div>
-          <div>
+          <div class="input">
             <label for="Password">Password</label>
             <input
               type="password"
@@ -69,6 +72,7 @@
               id="password"
               placeholder="Password"
             />
+            <div class="error-password"></div>
           </div>
           <div>
             <button type="submit">Claim your free trial</button>

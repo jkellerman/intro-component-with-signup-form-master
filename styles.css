@@ -77,6 +77,7 @@ input {
   outline: none;
   border: 1px solid var(--Grayish-Blue);
   padding: 1.5em;
+  padding-right: 4em;
   margin-bottom: 1em;
   font-weight: 500;
   color: black;
@@ -91,6 +92,28 @@ input:focus {
   font-weight: 600;
 }
 
+.input {
+  position: relative;
+}
+
+.input::after.active {
+  content: url(images/icon-error.svg);
+  position: absolute;
+  transform: translate(-3em, 1em);
+}
+
+.error-fname,
+.error-lname,
+.error-email,
+.error-password {
+  font-style: italic;
+  color: var(--Red);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: end;
+  transform: translateY(-0.75em);
+}
+
 button {
   background-color: var(--Green);
   color: inherit;
@@ -100,6 +123,10 @@ button {
   text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
 }
 
 .terms {
@@ -112,6 +139,10 @@ button {
   color: var(--Red);
   font-weight: 600;
   cursor: pointer;
+}
+
+.terms-link:hover {
+  opacity: 0.7;
 }
 
 .attribution {
@@ -158,5 +189,15 @@ button {
   input {
     margin-bottom: 1.5em;
     padding: 1.5em 2em;
+    padding-right: 4em;
+  }
+
+  .error-fname {
+    font-style: italic;
+    color: var(--Red);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: end;
+    transform: translateY(-1.5em);
   }
 }
