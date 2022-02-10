@@ -92,6 +92,10 @@ input:focus {
   font-weight: 600;
 }
 
+.placeholder-red {
+  color: var(--Red);
+}
+
 .input {
   position: relative;
 }
